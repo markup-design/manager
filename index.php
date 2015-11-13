@@ -8,7 +8,9 @@
 	
 	$js = "<script type='text/javascript' src='js/index.js'></script>";
 
-	require($_SERVER['DOCUMENT_ROOT']."/header.php");
+	$root = getcwd();
+	
+	require($root."/header.php");
 ?>
 
 <div id='main'>
@@ -18,5 +20,5 @@
 
 <?php 
 
-	require($_SERVER['DOCUMENT_ROOT']."/footer.php");
+	require($root."/footer.php");
 ?>
