@@ -1,3 +1,4 @@
 # manager
 Web Design Manager
-ejaifj
+
+Create, Innovate, Design
