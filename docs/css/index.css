@@ -1,0 +1,14 @@
+.info {
+	
+	display: inline-block;
+	padding: .25em;
+	border: 1px solid lightgrey;
+}
+
+.info .title {
+
+	background-color: #005587;
+	color: white;
+	font-weight: bold;
+	padding: .25em;
+}

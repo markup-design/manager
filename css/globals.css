@@ -1,0 +1,20 @@
+* {
+
+	font-family: Verdana;
+}
+
+body {
+
+	margin: auto;
+}
+
+h1 {
+
+	text-align: center;
+	margin: 1em;
+}
+
+#main {
+
+	padding: 2em 1em;
+}
