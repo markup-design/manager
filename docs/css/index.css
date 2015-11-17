@@ -1,3 +1,25 @@
+.applications {
+
+	padding: 1em 0em;
+}
+
+.application {
+
+	padding-bottom: 1em;
+}
+
+.application > div {
+
+	text-align: center;
+}
+
+#html-to-plain-text-converter {
+
+	display: inline-block;
+	text-align: center;
+	width: 260px;
+}
+
 .info {
 	
 	display: inline-block;
