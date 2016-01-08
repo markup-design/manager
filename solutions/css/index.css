@@ -2,3 +2,17 @@
 
 	text-align: center;
 }
+
+.raw-documentation pre {
+
+	padding: 1em;
+	margin: 1em;
+	background-color: black;
+	color: white;
+}
+
+.raw-documentation pre .function {
+
+	display: inline;
+	color: green;
+}

@@ -24,3 +24,8 @@ textarea {
 
 	padding: 2em 1em;
 }
+
+.display-none {
+
+	display: none;
+}
