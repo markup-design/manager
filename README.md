@@ -1,5 +1,5 @@
 # Manager
-This will guide you through setting up XAMPP and forking this repo to the correct folder to open it up in your browser to view it.
+This will guide you through setting up XAMPP and forking this repository to the correct folder to open it up in your browser to view it. Don't worry, these terms will make sense in just a few steps below!
 
 # Setup
 0. Create Github account.
