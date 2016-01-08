@@ -14,6 +14,10 @@ Lets create something.
 9. After you edit your files, you can go to your Git Hub client and commit the code to the repo.
 10. Once that is done, it is a joyous day! Now we can all see the files you submitted to the repo! Congratulations!
 
+# Viewing the Manager Web Code
+After you have apache running and depending on your XAMPP setup, you should be able to view the manager website I created by going to either:
+[localhost:8080/manager/](http://localhost:8080/manager/) or [localhost:/manager/](http://localhost/manager/)
+
 # What is Git Hub?
 Git Hub is a repository in the cloud. It allows users to submit code to the repo from any computer in the world.
 
