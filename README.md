@@ -1,5 +1,5 @@
-# manager
-Lets create something.
+# Manager
+This will guide you through setting up XAMPP and forking this repo to the correct folder to open it up in your browser to view it.
 
 # Setup
 0. Create Github account.
@@ -16,7 +16,7 @@ Lets create something.
 
 # Viewing the Manager Web Code
 After you have apache running and depending on your XAMPP setup, you should be able to view the manager website I created by going to either:
-[localhost:8080/manager/](http://localhost:8080/manager/) or [localhost:/manager/](http://localhost/manager/)
+[localhost:8080/manager/](http://localhost:8080/manager/) or [localhost:/manager/](http://localhost/manager/) or if you have the XAMPP window open you can simply click the admin button next to the apache service.
 
 # What is Git Hub?
 Git Hub is a repository in the cloud. It allows users to submit code to the repo from any computer in the world.
