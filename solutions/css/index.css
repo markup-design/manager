@@ -16,3 +16,40 @@
 	display: inline;
 	color: green;
 }
+
+#accordion > div .info-table {
+
+	margin: 1em 0em;
+}
+
+#accordion > div .info-table .info {
+
+	font-weight: bold;
+	padding: .25em;
+	display: inline-block;
+}
+
+#accordion > div .info-table .info .row .data {
+
+	display: inline-block;
+	padding: .25em;
+	max-width: 600px;
+	vertical-align: top;
+}
+
+#accordion > div .info-table .info .row .name {
+
+	width: 155px;
+}
+
+/**
+	This is my css theme. Create your own!
+*/
+#accordion > div .color-scheme-mark {
+
+	background-color: #0098F2;
+	color: #005587;
+	-webkit-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.45);
+	box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.45);
+}
