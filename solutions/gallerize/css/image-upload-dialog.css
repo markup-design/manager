@@ -1,0 +1,39 @@
+#image-upload-dialog .image-container .image {
+
+	position: relative;
+	margin: .5em;
+	padding: 0em;
+	border: 1px solid lightgrey;
+	max-width: 100%;
+	text-align: center;
+}
+
+#image-upload-dialog .image-container .image img {
+
+	width: 50px;
+	height: 50px;
+	max-width: 100%;
+	padding: .25em;
+}
+
+#image-upload-dialog .image-container .image .image-name {
+
+	padding: .25em;
+}
+
+#image-upload-dialog .image-container .image .image-controls {
+
+	padding: .2em;
+}
+
+#image-upload-dialog .image-container .image .image-controls .remove-image {
+
+	display: inline-block;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#image-upload-dialog .image-container .image .image-controls .remove-image:hover {
+
+	color: red;
+}
