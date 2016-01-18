@@ -21,18 +21,6 @@
 	padding: .25em;
 }
 
-#image-upload-dialog .image-container .image .image-controls {
-
-	padding: .2em;
-}
-
-#image-upload-dialog .image-container .image .image-controls .remove-image {
-
-	display: inline-block;
-	cursor: pointer;
-	font-weight: bold;
-}
-
 #image-upload-dialog .image-container .image .image-controls .remove-image:hover {
 
 	color: red;

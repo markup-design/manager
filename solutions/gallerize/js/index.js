@@ -155,18 +155,6 @@ $(document).ready(function () {
 			"text":fileSize
 		}).appendTo($ic);
 		
-		// create an image control panel
-		var $controls = $("<div/>", {
-			"class":"image-controls"
-		}).appendTo($ic);
-		
-		// create a way to remove the image
-		$("<div/>", {
-			"class":"remove-image",
-			"title":"click to remove image from list",
-			"text":"X"
-		}).appendTo($controls);
-		
 		// init the file reader
 		var reader = new FileReader();
 		
