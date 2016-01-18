@@ -16,6 +16,7 @@ $(document).ready(function () {
 			
 			"Upload" : function () {
 				
+				$("#upload-file-form").submit();
 			},
 			
 			"Close" : function () {$(this).dialog("close");}
@@ -47,6 +48,7 @@ $(document).ready(function () {
 		
 		var $uic = $iUploadDialog.find(".image-container");
 		$uic.empty();
+		
 		if (files.length > 0) {
 			
 			for (var i = 0; i < files.length; i++) {

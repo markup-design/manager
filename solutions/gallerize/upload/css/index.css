@@ -1,0 +1,37 @@
+.image {
+
+	margin: 1em 0em;
+	text-align: center;
+}
+
+.image img {
+
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.image .message {
+
+	padding: .25em;
+}
+
+.image-data .row {
+
+	display: inline-block;
+}
+
+.image-data .row .data {
+
+	display: inline-block;
+	max-width: 100%;
+}
+
+.image-data .row .label {
+
+	width: 200px;
+}
+
+.intro {
+
+	text-align: center;
+}
