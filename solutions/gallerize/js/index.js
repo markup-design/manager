@@ -1,9 +1,8 @@
 $(document).ready(function () {
 	
-	// create an image container
-	var $iContainer = $("<div/>", {
-		"class":"image-container"
-	}).appendTo("#gallerize");
+	var $g = $("#gallerize").gallerize({
+		gType: "art-by-bug"
+	});
 	
 	// create dialog to preview images being uploaded before submitting
 	var $iUploadDialog = $("#image-upload-dialog").dialog({
@@ -23,24 +22,6 @@ $(document).ready(function () {
 			"Close" : function () {$(this).dialog("close");}
 		}
 	});
-	
-	/**
-		Go through each image and get the widths.
-		Add all the widths up and that is how big to make the image container.
-	*/
-	var totalWidth = 0;
-	$("#gallerize .image").each(function () {
-		
-		var $img = $(this);
-		var imgWidth = parseInt($img.width());
-		totalWidth += imgWidth+42;
-		
-		var $dImage = $img.detach();
-		$dImage.appendTo($iContainer);
-	});
-	
-	// set the total width of the display image container
-	$iContainer.width(totalWidth);
 	
 	// handle new image uploads
 	$("#new-image").on("change", function (e) {
