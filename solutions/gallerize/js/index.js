@@ -5,6 +5,7 @@ $(document).ready(function () {
 		"class":"image-container"
 	}).appendTo("#gallerize");
 	
+	// create dialog to preview images being uploaded before submitting
 	var $iUploadDialog = $("#image-upload-dialog").dialog({
 		autoOpen: false,
 		width: 800,
@@ -67,9 +68,10 @@ $(document).ready(function () {
 					console.log(message);
 				});
 				
+				// the only reason this is false is because of a duplicate name
 				if (result === false) { 
 				
-					alert("Duplicate name found! Please rename image and try again.");
+					alert("Duplicate name found! Please rename ["+file.name+"] image and try again.");
 				}
 			}
 			
