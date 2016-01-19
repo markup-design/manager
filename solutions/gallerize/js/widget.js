@@ -36,7 +36,7 @@ $.widget( "solutions.gallerize", {
 		var $el = $w.element;
 		
 		// list of known types; from changeType method's switch statement
-		var knownTypes = ["art-by-bug", "default"];
+		var knownTypes = ["art-by-bug", "default-scrollable", "default"];
 		
 		// create control container
 		var $cc = $("<div/>", {
@@ -116,13 +116,27 @@ $.widget( "solutions.gallerize", {
 				savedImages[x].appendTo($el);
 			}
 		
+			// output images based on type
 			switch (galleryType) {
 				
+				/**
+						 XXXX XXXX 		     XX
+					XXXX XXXX 	   XXXX XXXX XX
+					XXXX 	  XXXX XXXX XXXX XX
+					XXXX XXXX XXXX XXXX      XXXX
+						 XXXX XXXX      XXXX XXXX
+				*/
 				case "art-by-bug":
+				
+					var groups = ["single", "double"];
+					var sizes = ["normal", "tall", "wide", "slim-wide"];
 				
 				break;
 				
-				default:
+				/**
+					Outputs a scrollable list of images.
+				*/
+				case "default-scrollable":
 				
 					// create an image container
 					var $iContainer = $("<div/>", {
@@ -138,7 +152,7 @@ $.widget( "solutions.gallerize", {
 						
 						var $img = $(this);
 						var imgWidth = parseInt($img.width());
-						totalWidth += imgWidth+42;
+						totalWidth += imgWidth+20;
 						
 						var $dImage = $img.detach();
 						$dImage.appendTo($iContainer);
@@ -146,7 +160,10 @@ $.widget( "solutions.gallerize", {
 					
 					// set the total width of the display image container
 					$iContainer.width(totalWidth);
+				break;
 				
+				default:
+					// outputs images without any effects
 				break;
 			}
 		}
