@@ -1,0 +1,10 @@
+.form-gen-row {
+
+	padding: 1em 0em;
+}
+
+.form-gen-row  label {
+
+	display: block;
+	padding-right: .5em;
+}
