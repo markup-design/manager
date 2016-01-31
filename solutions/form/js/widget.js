@@ -4,6 +4,7 @@ $.widget( "solutions.formGen", {
     options: {
 		creation: false, // whether or not we are creating the form in the editor
 		enctype: false, // multipart/form-data | application/x-www-form-urlencoded | text/plain
+		inputTypes: ["button", "checkbox", "date", "email", "file", "password", "phone", "radio", "text"], // types of input there are
 		recaptcha: true, // toggles recaptcha; this requires captcha already being setup
 		requiredFields: "*", // searches for any form field that has an asterisk
 		type: false
@@ -84,6 +85,7 @@ $.widget( "solutions.formGen", {
 		var formAttrs = {};
 		var enctype = $w.option("enctype");
 		var creation = $w.option("creation");
+		var inputTypes = $w.option("inputTypes");
 		
 		// set the override if there is one
 		if ($override) $el = $override;
@@ -118,6 +120,7 @@ $.widget( "solutions.formGen", {
 						if ($efd.length > 0) {
 							
 							var fieldName = $("#form-gen-new-name").val();
+							var fieldType = $("#form-gen-new-type").val();
 							
 							// check to see if that field already exists
 							if ($("#form-gen-"+fieldName).length === 0) {
@@ -127,7 +130,7 @@ $.widget( "solutions.formGen", {
 									"id":"form-gen-"+fieldName,
 									"name":fieldName,
 									"placeholder":"",
-									"type":"text"
+									"type":fieldType
 								});
 								$w.addField($nameOfForm, $efd);
 							}
@@ -194,14 +197,38 @@ $.widget( "solutions.formGen", {
 			});
 			$w.addField($nameOfForm, $fDialog);
 			
-			// add new name field
-			var $nameOfField = $("<input/>", {
-				"id":"form-gen-new-name",
-				"name":"Name",
-				"placeholder":"Field Name",
-				"type":"text"
-			});
-			$w.addField($nameOfField, $addNewField);
+			// below is a way to create fields for the above form dialog
+				// add new name field
+				var $nameOfField = $("<input/>", {
+					"id":"form-gen-new-name",
+					"name":"Name",
+					"placeholder":"Name of field",
+					"type":"text"
+				});
+				$w.addField($nameOfField, $addNewField);
+				
+				// add new type field
+				var $typeOfField = $("<input/>", {
+					"id":"form-gen-new-type",
+					"name":"Type",
+					"list":"form-gen-new-type-datalist"
+				});
+				
+					// add new type field datalist
+					var $typeOfFieldDL = $("<datalist/>", {
+						"id":"form-gen-new-type-datalist"
+					}).appendTo($addNewField);
+				
+						// add each input type
+						for (var x in inputTypes) {
+							
+							var type = inputTypes[x];
+							
+							$("<option/>", {
+								"value":type
+							}).appendTo($typeOfFieldDL);
+						}
+				$w.addField($typeOfField, $addNewField);
 		}
 	}
 });
