@@ -8,8 +8,8 @@ This will guide you through setting up XAMPP and forking this repository to the 
 3. Download XAMPP and Set it up [XAMPP Tutorials](https://www.youtube.com/results?search_query=setting+up+xampp+on+windows)
 4. Open XAMMP and click Explorer. This should open up a window where your copy of XAMPP was installed.
 5. Open the htdocs folder. This is where all the web files are stored.
-6. Fork this repository /xampp/htdocs/ folder. [Forking Examples](https://www.youtube.com/results?search_query=setting+up+git+repository)
-7. Once you have properly forked the repo it should create a folder called manager in your /xampp/htdocs/ folder.
+6. Clone the repository to the /xampp/htdocs/ folder using the Git Hub client.
+7. Once you have cloned the repo it should create a folder called manager in your /xampp/htdocs/ folder.
 8. From here you can edit code using the Explorer button from the XAMPP program. I like to use [Notepad++](https://notepad-plus-plus.org/download/) to edit my files.
 9. After you edit your files, you can go to your Git Hub client and commit the code to the repo.
 10. Once that is done, it is a joyous day! Now we can all see the files you submitted to the repo! Congratulations!
