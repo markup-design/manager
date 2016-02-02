@@ -122,25 +122,34 @@ $.widget( "solutions.formGen", {
 							var fieldName = $("#form-gen-new-name").val();
 							var fieldType = $("#form-gen-new-type").val();
 							
-							// check to see if that field already exists
-							if ($("#form-gen-"+fieldName).length === 0) {
+							if ($.trim(fieldName) !== "") {
 								
-								// create name field for form
-								var $nameOfForm = $("<input/>", {
-									"id":"form-gen-"+fieldName,
-									"name":fieldName,
-									"placeholder":"",
-									"type":fieldType
-								});
-								$w.addField($nameOfForm, $efd);
+								// check to see if that field already exists
+								if ($("#form-gen-"+fieldName).length === 0) {
+									
+									// create name field for form
+									var $nameOfForm = $("<input/>", {
+										"id":"form-gen-"+fieldName,
+										"name":fieldName,
+										"placeholder":"",
+										"type":fieldType
+									});
+									$w.addField($nameOfForm, $efd);
+								}
+								else console.log("That field already exists!");
 							}
-							else console.log("That field already exists!");
+							else console.log("No name given!");
 						}
 						else console.log("Edit dialog not created yet!");
 						
 						// close the dialog
 						$(this).dialog("close");
 					}
+				},
+				open: function () {
+					
+					// clear all fields
+					$(this).find("input").val("");
 				}
 			});
 			

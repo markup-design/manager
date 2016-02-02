@@ -1,0 +1,35 @@
+.qtip .element-selected {
+
+	border-bottom: 1px solid lightgrey;
+	padding: .25em;
+	margin: .1em auto;
+}
+
+.qtip .solutions-menu {
+
+	margin: .1em auto;
+	padding: .1em .25em;
+}
+
+.qtip .solutions-menu .s-menu-option {
+
+	padding: .25em;
+	cursor: pointer;
+}
+
+.qtip .solutions-menu .nested-option {
+
+	padding: .25em;
+}
+
+.qtip .solutions-menu .nested-option:hover {
+
+	background-color: #0098F2;
+	color: white;
+}
+
+.qtip .solutions-menu .title {
+
+	font-weight: bold;
+	padding: .25em 0em;
+}
