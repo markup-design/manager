@@ -1,0 +1,1 @@
+<?php 	$title = "Scrum";		$css = "	<link rel='stylesheet' type='text/css' href='css/index.css'>";		$js = "	<script type='text/javascript' src='js/index.js'></script>";		require($_SERVER['DOCUMENT_ROOT']."/manager/header.php");?><div id='main'>		<h1>Scrum</h1>(<a href='https://en.wikipedia.org/wiki/Scrum_(software_development)' target='_blank'>Wiki</a>)	</div>

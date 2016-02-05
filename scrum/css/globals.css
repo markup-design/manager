@@ -1,0 +1,41 @@
+* {
+
+	font-family: Verdana;
+}
+
+body {
+
+	margin: auto;
+}
+
+h1 {
+
+	text-align: center;
+	margin: 1em;
+}
+
+textarea {
+
+	max-width: 100%;
+	resize: none;
+}
+
+#main {
+
+	padding: 2em 1em;
+}
+
+.display-none {
+
+	display: none;
+}
+
+.ui-margin-auto {
+
+	margin: auto;
+}
+
+.ui-text-center {
+
+	text-align: center;
+}

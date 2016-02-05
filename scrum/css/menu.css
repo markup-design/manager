@@ -1,0 +1,128 @@
+#main-menu {
+
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: block;
+	width: 100%;
+	margin: 0em;
+	padding: 0em;
+	list-style-type: none;
+	background-color: #006caa;
+	
+	-webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
+	z-index: 9998;
+}
+
+#main-menu > li {
+
+	display: inline-block;
+	padding: 1em .5em;
+}
+
+#main-menu > li > a {
+
+	text-decoration: none;
+	color: white;
+	background-color: #006caa;
+	font-weight: bold;
+	padding: .5em 1em;
+}
+
+#main-menu > li > a:hover {
+
+	background-color: #0098f2;
+}
+
+#main-menu > .home {
+
+	display: inline-block !important;
+}
+
+#main-menu > .mobile {
+
+	display: none;
+}
+
+#main-menu > .mobile:last-child {
+
+	float: right;
+	padding: .6em .1em;
+}
+
+#main-menu > .mobile:last-child:hover {
+
+	background-color: #0098f2;
+}
+
+#main-menu > .mobile:last-child > a {
+
+	display: inline-block;
+	padding: 0em;
+	background: none;
+}
+
+#main-menu > .mobile:last-child > a > div {
+
+	height: 5px;
+	width: 35px;
+	margin: .25em;
+	background-color: white;
+}
+
+#main-menu-container {
+
+	position: relative;
+	padding: 1em;
+}
+
+#mobile-menu {
+
+	position: fixed;
+	top: 50px;
+	left: 0px;
+	list-style-type: none;
+	padding: 0em;
+	margin: 0em;
+	width: 100%;
+	display: none;
+}
+
+#mobile-menu > li {
+
+	display: block;
+}
+
+#mobile-menu > li > a {
+
+	padding: 1em;
+	background-color: #006caa;
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+#mobile-menu > li > a:hover {
+
+	background-color: #0098f2;
+}
+
+@media (max-width: 768px) {
+  
+	#main-menu > li:not(.mobile) {
+	
+		display: none;
+	}
+  
+	#main-menu > .mobile {
+
+		display: inline-block;
+	}
+	
+	#main-menu > .mobile:last-child:hover #mobile-menu {
+	
+		display: block;
+	}
+}
