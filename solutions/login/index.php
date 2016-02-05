@@ -1,0 +1,1 @@
+<?php 	$title = "Solutions";		$css = " ";		$js = "	<script type='text/javascript' src='js/index.js'></script>	<script type='text/javascript' src='js/widget.js'></script>";		require($_SERVER['DOCUMENT_ROOT']."/manager/header.php");		// [SCB]?><div id='main'>		<h1>Login</h1>	</div><?php 	// [End]	?>
