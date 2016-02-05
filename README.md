@@ -5,7 +5,7 @@ This will guide you through setting up XAMPP and forking this repository to the 
 0. Create Github account.
 1. Ask to join our team.
 2. Download Github client.
-3. Download XAMPP and Set it up [XAMPP Tutorials](https://www.youtube.com/results?search_query=setting+up+xampp+on+windows)
+3. Download XAMPP and Set it up (There is no x64 version for windows) [XAMPP Tutorials](https://www.youtube.com/results?search_query=setting+up+xampp+on+windows)
 4. Open XAMMP and click Explorer. This should open up a window where your copy of XAMPP was installed.
 5. Open the htdocs folder. This is where all the web files are stored.
 6. Clone the repository to the /xampp/htdocs/ folder using the Git Hub client.
@@ -18,11 +18,11 @@ This will guide you through setting up XAMPP and forking this repository to the 
 After you have apache running and depending on your XAMPP setup, you should be able to view the manager website I created by going to either:
 [localhost:8080/manager/](http://localhost:8080/manager/) or [localhost:/manager/](http://localhost/manager/) or if you have the XAMPP window open you can simply click the admin button next to the apache service.
 
-# What is Git Hub?
-Git Hub is a repository in the cloud. It allows users to submit code to the repo from any computer in the world.
-
 # What is a Repository (Repo)?
 A repository is a place where all code is kept in a project. Think of a repo as a file system. A file system that records all user submissions and is a way to keep code and files organized.
+
+# What is Git Hub?
+Git Hub is a repository in the cloud. It allows users to submit code to the repo from any computer in the world.
 
 # What is XAMMP?
 XAMPP acts as a web server running on your home PC.
