@@ -3,8 +3,12 @@
 		<li class='home mobile'><a href='/manager/'>Home</a></li>
 		<li><a href='/manager/solutions/'>Solutions</a></li>
 		<li><a href='/manager/docs/'>Documentation</a></li>
+<<<<<<< HEAD
 		<li><a href='/manager/scrum/'>Scrum</a></li>
 		<li><a href='/manager/login/'>Login</a></li>
+=======
+		<li><a href='/manager/solutions/login/'>Login</a></li>
+>>>>>>> origin/master
 		<li class='mobile'>
 			
 			<a href='#mobile-menu'>
