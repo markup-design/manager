@@ -3,6 +3,7 @@
 		<li class='home mobile'><a href='/manager/'>Home</a></li>
 		<li><a href='/manager/solutions/'>Solutions</a></li>
 		<li><a href='/manager/docs/'>Documentation</a></li>
+		<li><a href='/manager/scrum/'>Scrum</a></li>
 		<li><a href='/manager/login/'>Login</a></li>
 		<li class='mobile'>
 			
@@ -15,6 +16,7 @@
 			<ul id='mobile-menu'>
 				<li><a href='/manager/solutions/'>Solutions</a></li>
 				<li><a href='/manager/docs/'>Documentation</a></li>
+				<li><a href='/manager/scrum/'>Scrum</a></li>
 				<li><a href='/manager/login/'>Login</a></li>
 			</ul>
 		</li>
