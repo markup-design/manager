@@ -1,0 +1,69 @@
+.storyboard {
+
+	position: relative;
+	width: 100%;
+}
+
+.storyboard tr:nth-child(odd) {
+
+	background-color: lightgrey;
+}
+
+.storyboard tr td {
+
+	padding: 1em;
+}
+
+.storyboard tr td:not(:first-child) {
+
+	text-align: center;
+}
+
+.storyboard tfoot td {
+
+	text-align: center;
+	border-top: 1px solid black;
+}
+
+.storyboard .complete {
+
+	background-color: green;
+}
+
+.storyboard .declaration {}
+
+.storyboard .declaration .description {
+
+	padding: .25em 0em;
+}
+
+.storyboard .declaration .reinforcement {
+
+	padding-bottom: .25em;
+	padding-top: .25em;
+	margin: 0em;
+}
+
+.storyboard .declaration .title {
+
+	padding: .25em 0em;
+}
+
+.storyboard .in-progress {
+
+	background-color: orange;
+}
+
+.storyboard .status {
+
+	font-weight: bold;
+	color: white;
+}
+
+@media (max-width: 768px) {
+
+	.storyboard .description, .storyboard .reinforcement {
+	
+		display: none;
+	}
+}
