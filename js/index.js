@@ -13,8 +13,8 @@ $(document).ready(function () {
 				target: 'mouse', // Position it where the click was...
 				adjust: { mouse: false } // ...but don't follow the mouse
 			},
-			hide: 'unfocus',
-			show: 'mousedown', // Can't use click event for this, sorry!
+			hide: 'unfocus mousedown',
+			show: 'mouseup', // Can't use click event for this, sorry!
 			events: {
 				show: function(event, api) {
 					
