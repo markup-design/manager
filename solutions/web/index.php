@@ -1,0 +1,1 @@
+<?php 	$title = "Solutions - Web";		$css = "	<link rel='stylesheet' type='text/css' href='css/index.css'>";		$js = "	<script type='text/javascript' src='js/index.js'></script>";		require($_SERVER['DOCUMENT_ROOT']."/manager/header.php");	?><div id='main'>		<h1>Web</h1>		<a href='create-page/'><button>Create Page</button></a></div>

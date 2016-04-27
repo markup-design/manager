@@ -1,0 +1,47 @@
+form {
+
+	padding: 1em;
+	margin: 0em auto;
+}
+
+form > div {
+
+	padding: .25em;
+	text-align: center;
+}
+
+form > div > label {
+
+	width: 110px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	padding: .15em;
+}
+
+form > div > input {
+
+	padding: .25em;
+	margin: .15em;
+	width: 300px;
+}
+
+form > div > select {
+
+	padding: .25em;
+	margin: .15em;
+	width: 300px;
+	cursor: pointer;
+}
+
+form > div > textarea {
+
+	padding: .25em;
+	margin: .15em;
+	width: 300px;
+}
+
+form > .submit-container {
+
+	padding: 1em;
+}
