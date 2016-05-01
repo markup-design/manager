@@ -4,13 +4,17 @@ form {
 	margin: 0em auto;
 }
 
-form > div {
+form .form-row {
 
+	position: relative;
 	padding: .25em;
 	text-align: center;
+	width: 450px;
+	max-width: 100%;
+	margin: auto;
 }
 
-form > div > label {
+form label {
 
 	width: 110px;
 	display: inline-block;
@@ -19,14 +23,14 @@ form > div > label {
 	padding: .15em;
 }
 
-form > div > input {
+form input {
 
 	padding: .25em;
 	margin: .15em;
 	width: 300px;
 }
 
-form > div > select {
+form select {
 
 	padding: .25em;
 	margin: .15em;
@@ -34,14 +38,22 @@ form > div > select {
 	cursor: pointer;
 }
 
-form > div > textarea {
+form textarea {
 
 	padding: .25em;
 	margin: .15em;
 	width: 300px;
 }
 
-form > .submit-container {
+form .submit-container {
 
 	padding: 1em;
+}
+
+#relative-path-button {
+
+	position: absolute;
+	right: -1.5em;
+	top: .15em;
+	padding: .5em 1em;
 }
