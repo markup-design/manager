@@ -28,10 +28,13 @@ class WebPage
 		else return false;
 	}
 	
+	/**
+		Create file relative to the webpage.
+	*/
 	public function createFile ($file) {
 	
 		$path = $this->path;
-	
+		
 		// if there is a folder in the file path
 		if (strpos($file, "/") !== false) {
 			
@@ -119,13 +122,21 @@ class WebPage
 			$text .= "\";";
 		}
 		
+		
 		// add included files if we have them
 		if (is_array($includes) && count($includes) > 0) {
 			
-			$text .= "\n";
-			foreach ($includes as $i) {
+			$webpath = $this->getPath();
+			
+			foreach ($includes as $filetype => $f) {
 				
-				$text .= "\n\trequire_once \$_SERVER['DOCUMENT_ROOT'].\"".$i."\";";
+				foreach ($f as $path) {
+					
+					// if the path has no slashes add one to the beginning
+					if (strpos($path, "/") === false) $path = $webpath.$path;
+					
+					$text .= "\n\n\trequire_once \$_SERVER['DOCUMENT_ROOT'].\"".$path."\";";
+				}
 			}
 		}
 		
@@ -137,23 +148,30 @@ class WebPage
 	
 	public function getHeader ($header) {
 		
-		return $this->headers[$header];
+		return @$this->headers[$header];
 	}
 	
-	public function getLinks () {
+	public function getIncludes ($include) {
 		
-		$name = $this->name;
-		$path = $this->path;
+		return @$this->includes[$include];
 	}
-
-	public function includeFile ($filepath) {
+	
+	/**
+		Get relative path to the webpage.
+	*/
+	public function getPath () {
 		
-		$this->includes[] = $filepath;
+		return $this->path;
 	}
 	
 	public function setHeader ($header, $title) {
 		
 		$this->headers[$header] = $title;
+	}
+	
+	public function setInclude ($include, $filepath) {
+		
+		$this->includes[$include][] = $filepath;
 	}
 	
 	public function setLink ($linkPath) {

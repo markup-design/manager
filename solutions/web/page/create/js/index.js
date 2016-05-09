@@ -1,7 +1,60 @@
 $(document).ready(function () {
 	
 	// add jQuery to submit button
-	$("[type='submit']").button();
+	$("button[type='submit']").button();
+	
+	// select all options in the includes before submitting
+	$("form").submit(function () {
+		
+		$(this).find("select[multiple] option").prop("disabled", false).attr("selected", "selected");
+	});
+	
+	var $fi = $("#file-includes");
+	
+	// add file include button
+	$("#add-file-include")
+	.button({
+		text: false,
+		icons: {
+			primary: "ui-icon-plusthick"
+		}
+	})
+	.on("click", function () {
+		
+		var r = prompt("Relative path to file\nEx: css/index.css", "");
+		
+		if (r) {
+			
+			$("<option/>", {
+				"value":r,
+				"text":r
+			}).appendTo($fi);
+		}
+	});
+	
+	// file include select
+	$fi.on("click", function () {
+		
+		var selected = $fi.find("option:selected").length;
+		
+		if (selected > 0) $("#remove-file-include").button("option", "disabled", false);
+		else $("#remove-file-include").button("option", "disabled", true);
+	});
+	
+	// remove file include button
+	$("#remove-file-include")
+	.button({
+		text: false,
+		icons: {
+			primary: "ui-icon-trash"
+		}
+	})
+	.on("click", function () {
+		
+		$fi.find("option:selected").remove();
+		
+		$("#remove-file-include").button("option", "disabled", true);
+	});
 	
 	checkPageType();
 	

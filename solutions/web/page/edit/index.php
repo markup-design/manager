@@ -1,0 +1,1 @@
+<?php 	$title = "Webpage Edit";		$css = "	<link rel='stylesheet' type='text/css' href='css/index.css'>";		$js = "	<script type='text/javascript' src='js/index.js'></script>";		require($_SERVER['DOCUMENT_ROOT']."/manager/header.php");	?><div id='main'>		<h1>Edit a Web Page</h1></div>

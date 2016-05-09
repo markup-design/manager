@@ -50,10 +50,22 @@ form .submit-container {
 	padding: 1em;
 }
 
+#include-option-container {
+
+	position: absolute;
+	right: -1.75em;
+	top: .5em;
+}
+
+#include-option-container button {
+
+	padding: .5em 1em;
+}
+
 #relative-path-button {
 
 	position: absolute;
-	right: -1.5em;
+	right: -1.6em;
 	top: .15em;
 	padding: .5em 1em;
 }
